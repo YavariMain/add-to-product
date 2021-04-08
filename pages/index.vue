@@ -1,7 +1,6 @@
 <template>
   <section class="se-product">
     <div class="container-xl">
-      <div class="row">test test test test test test test test</div>
       <div class="row">
         <div class="w-100 mb-5">
           <h2>products cat title</h2>
