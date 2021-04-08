@@ -34,3 +34,21 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      // get API
+      async getIncidents() {
+        const res = await this.$store.dispatch('getIncidents')
+        this.incidents = res.data.data.incidents
+      },
+    }
+  },
+
+  mounted() {
+    this.getIncidents()
+  },
+}
+</script>
